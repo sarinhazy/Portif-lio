@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #ffe6f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+#toggleDarkMode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff4d94;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#toggleDarkMode:hover {
+    background-color: #ff1a75;
+}
+
+
+.header {
+    width: 100%;
+    background-image: url('image 1.png'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+}
+
+.header p {
+    font-size: 1.2em;
+    font-family: "Jost", sans-serif;
+}
+
+
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9e6f0;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: -40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Jost", sans-serif;
+}
+
+.about p {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: "Jost", sans-serif;
+}
+
+
+.experience {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9e6f0;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Jost", sans-serif;
+}
+
+.experience h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+}
+
+.experience p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+}
+
+.experience img {
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+.footer {
+    width: 100%;
+   
+    background-color: #ff4d94;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Jost", sans-serif;
+}
+
+.footer .socials {
+    margin-bottom: 10px;
+}
+
+.footer .socials p {
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-family: "Jost", sans-serif;
+}
+
+.footer .socials a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "Jost", sans-serif;
+}
+
+.footer .socials a:hover {
+    color: #ffe6f2;
+}
+
+.footer .footer-text {
+    font-style: italic;
+    margin: 10px 0;
+    font-family: "Jost", sans-serif;
+}
+
+.footer p {
+    font-size: 0.9em;
+    font-family: "Jost", sans-serif;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+    font-family: "Jost", sans-serif;}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode .header {
+    color: #f0f0f0;
+}
+
+body.dark-mode .main-content,
+body.dark-mode .experience,
+body.dark-mode .footer {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+body.dark-mode .footer .socials a {
+    color: #f0f0f0;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 112, 162); /* Cor rosa */
+    border-radius: 50%; /* Forma circular */
+    position: fixed;
+    pointer-events: none; /* Permite clicar através do cursor */
+    transform: translate(-50%, -50%); /* Centraliza o ponto de referência */
+    z-index: 1000;
+    transition: transform 0.1s ease; /* Suaviza o movimento */
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .course-list {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .course-list h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .course-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-list li {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+  }

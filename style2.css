@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+
+header {
+   background-color: #f8a3d1;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Jost", sans-serif;
+}
+
+nav ul li a:hover {
+    color: #a0529b;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ffbce1;
+    border-radius: 8px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #a0529b;
+    font-family: "Jost", sans-serif;
+}
+
+form textarea, form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f065b2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Jost", sans-serif;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #333;
+}
+
+footer {
+    background-color: #f4448a;
+    padding: 2em;
+    color: #f0c5ee;
+    text-align: center;
+}
+
+footer .social-media, footer .quote, footer nav {
+    margin-bottom: 1em;
+}
+
+footer .icons span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#toggleDarkMode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff4d94;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#toggleDarkMode:hover {
+    background-color: #ff1a75;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #333;
+    color: #f8c9ed;
+}
+
+
+
+.dark-mode form button {
+    background-color: #ff87c5;
+}
+
+.dark-mode #dark-mode-toggle {
+    background-color: #444;
+    color: #f8c9ed;
+}
+
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 112, 162); 
+    border-radius: 50%; 
+    position: fixed;
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000;
+    transition: transform 0.1s ease; 
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .course-list {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .course-list h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .course-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-list li {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+  }
